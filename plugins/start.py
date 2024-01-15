@@ -1,5 +1,6 @@
 
-from pyrogram import Client, filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import Client, filters
+from pyrogram.types import stopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
 
 
 @Client.on_message(filters.command(["start"]), group=-2)
@@ -14,4 +15,4 @@ async def start(client, message):
     ])
     welcomed = f"<b> Hey {message.from_user.first_name} , \n\nI'm YouTube DL Bot. I can download video or audio f\n rom Youtube. \n\nMade by @SDBOTs_inifinity 🇱🇰/help for More info </b>"
     await message.reply_text(welcomed, reply_markup=joinButton)
-    raise StopPropagatio
+    raise StopPropagation
