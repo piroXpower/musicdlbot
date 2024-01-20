@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import Client, filters, idle
 from pyrogram.types import Message
 
-SESSION = ""
+SESSION = "BQArX0EAr7Bodpc5kjZgbKC82X0XevXw58fY0gfCcLTUqB99SrS2eFip2IenybqVjAzEusfkDJgUU2aq_ZPkpxHbHqnjWnIlRlQmH2I62-0y-vCcsy55Tefi3uSevBB11EKjiaMH7oLJ4QVf8LV67mw0Hb_UhC9I1x7utLTdQIBMHGrUQ-JQviFNjuI3aIUlNPEjSp-h7Pp4Pgwm0cJ2xcHdivYzhnuoyah-BK_75OluCl6CKZvxvi2CbcGulC-0osa7r0AP2bznRD1Nw9GO-5MjKM0-NRBamLLPFWKFen9gwzTzbl12j_0bUo8GWUK-Uhblmgah5fXyGGT5H3oO6w7qR3ojGgAAAAGHnEQbAA"
 api_id='21364355'
 api_hash="72f11aec1dd3e5764554d477341a3d0b"
 
