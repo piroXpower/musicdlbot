@@ -1,3 +1,2 @@
-TgCrypto
-pyrogram==1.4
+telethon
 asyncio
