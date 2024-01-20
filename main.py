@@ -23,13 +23,13 @@ def contains_font(text):
     # Check if the message contains non-ASCII characters (indicating it's a font)
     return any(char in ALPHABET for char in text)
 
-@client.on(events.NewMessage(chats=events.ChatAction))
+@client.on(events.NewMessage(incoming=True)) 
 async def handle_new_message(event):
-    if event.is_group and event.is_text and not event.message.sender_id.bot:
+    if not event.sender_id.bot:
         if contains_font(event.text):                       
             logger.info(f"Font detected")            
-            await event.reply(f"dont send  font")
-            await client.delete_messages(chat_id, event.message.id)
+            await event.reply(f"{event.sender_id} dont send  font")
+            await message.delete()
 
 client.start()
 logger.info('App Started')
