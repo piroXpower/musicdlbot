@@ -24,6 +24,6 @@ def fonts(_, message:Message):
         message.reply(f'{sendee} sending font in ` {chatname} ')
         message.delete()
 
-app.run()
+app.start()
 print('App Started') 
 idle()
