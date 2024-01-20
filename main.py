@@ -5,8 +5,8 @@ from telethon.tl.types import MessageEntityTextUrl
 import logging
 
 STRING_SESSION = "1BVtsOL0Bu1cFKonV3n_PUtDdVujCnooTuX9xpb0VkAF3QXkrVDyidGvHSRwtTSw1bExfsLOv7WxzUeYcmUa_ZysdSrzFA_HN_MiwnVunAp6EC-pNF3_4iFp7XnHQxCqzqfb44XjFbGxGBWO7YL5Yjj8K0fukhPU5QqAv700Lk_4hQUwsFq1UUgMw6LyZI3O2L6RZTV0gmTUcR4cdlnDJ6JmDq_11GMN0MlNTTN0qVTNM6sVPKUKzt5_ciO4anYO3Ykyw86ej7lAAulRdidTMIF2sZ-kpjwksdoO5vcoue5cRaJyVUdmibVXz8fGBKh2uHgOkmnRpzUjil2eWS0Xt93--xuXePtQ="
-API_ID = '21364355'
-API_HASH = "72f11aec1dd3e5764554d477341a3d0b"
+APP_ID = '21364355'
+APP_HASH = "72f11aec1dd3e5764554d477341a3d0b"
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
