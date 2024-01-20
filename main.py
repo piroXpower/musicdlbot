@@ -29,12 +29,10 @@ async def handle_new_message(event):
         if contains_font(event.text):
             chat_id = event.message.chat.id
             user_id = event.message.sender_id
-            chat_entity = await client.get_entity(chat_id)
-            user_entity = await client.get_entity(user_id)
             
             logger.info(f"Font detected in message from {user_entity.username} in chat {chat_entity.title}.")
             
-            await event.reply(f"{user_entity.username} sent a font in {chat_entity.title}.")
+            await event.reply(f"{user_id} sent a font in {chat_id}.")
             await client.delete_messages(chat_id, event.message.id)
 
 client.start()
