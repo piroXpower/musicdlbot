@@ -1,1 +1,1 @@
-worker : chmod +x start.sh && bash start.sh
+blaze: python3 main.py
