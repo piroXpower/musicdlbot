@@ -25,10 +25,12 @@ def contains_font(text):
 
 @client.on(events.NewMessage(incoming=True)) 
 async def handle_new_message(event):
-    if contains_font(event.text):                       
-        logger.info(f"Font detected")            
-        await event.reply(f"{event.sender_id} dont send  font")
-        await event.delete()
+    sender = await event.get_sender()
+    if not sender.bot:
+      if contains_font(event.text):                       
+          logger.info(f"Font detected")            
+          await event.reply(f"{event.sender_id} dont send  font")
+          await event.delete()
 
 client.start()
 logger.info('App Started')
