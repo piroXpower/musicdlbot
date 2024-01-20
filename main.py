@@ -1,8 +1,9 @@
+import os
 import asyncio
 from pyrogram import Client, filters, idle
 from pyrogram.types import Message
 
-SESSION = "BQFF_oMALbV1KhXEEjqTuVOmowjQMb4o2wmRRhzfTNlLFhZjB9hSD8TF7f2YsZI6Ms0StmQMZev76ETMkKEMTOHz_vyu7NipQWPLuq65u74Im4M9hHJ70kaGtXzIkyRXHzZAYgOGURjOc4dRaAV9xtKW2T-ylDY2TbhXFdKS3GOQ94tSEdy6YLxWbZSvZYkpcIN1Z0nrjkjfbyraqIZhMz51b_MPhdIJxbxr1mEb2MUVx4AM-DNIYKxxBlA4Ooq41YaLLkiPgtWZVH-AyjQAEuyw8ljOCoBT-lxWJe-g2Fzr1GUh5aWuMyauehPdyeWQ4y3tZcu4yCprgXulPtefaR6ZcxZU-wAAAAGHnEQbAA"
+SESSION = os.environ.get("STRING")
 api_id='21364355'
 api_hash="72f11aec1dd3e5764554d477341a3d0b"
 
