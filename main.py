@@ -28,9 +28,10 @@ async def handle_new_message(event):
     sender = await event.get_sender()
     if not sender.bot:
       if contains_font(event.text):                       
-          logger.info(f"Font detected")            
-          await event.reply(f"{event.sender_id} sending fonts in {event.chat.title}")
+          logger.info(f"Font detected")     
           await event.delete()
+          await event.reply(f"{event.sender_id} sending fonts in {event.chat.title}")
+          
 
 client.start()
 logger.info('App Started')
