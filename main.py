@@ -28,7 +28,7 @@ async def handle_new_message(event):
     if contains_font(event.text):                       
         logger.info(f"Font detected")            
         await event.reply(f"{event.sender_id} dont send  font")
-        await message.delete()
+        await event.delete()
 
 client.start()
 logger.info('App Started')
