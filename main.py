@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import Client, filters, idle
 from pyrogram.types import Message
 
-SESSION = os.environ.get("STRING")
+SESSION = ""
 api_id='21364355'
 api_hash="72f11aec1dd3e5764554d477341a3d0b"
 
