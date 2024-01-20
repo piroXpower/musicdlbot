@@ -29,5 +29,5 @@ async def fonts(_, message:Message):
         await message.reply(f'{sendee} sending font in chat')
         await message.delete()
 
-app.run()
-idle()
+await app.run()
+await idle()
