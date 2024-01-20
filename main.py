@@ -26,12 +26,9 @@ def contains_font(text):
 @client.on(events.NewMessage(chats=events.ChatAction))
 async def handle_new_message(event):
     if event.is_group and event.is_text and not event.message.sender_id.bot:
-        if contains_font(event.text):      
-            user_id = event.message.sender_id
-            
-            logger.info(f"Font detected in message from {user_id}")
-            
-            await event.reply(f"{user_id} sent a font")
+        if contains_font(event.text):                       
+            logger.info(f"Font detected")            
+            await event.reply(f"dont send  font")
             await client.delete_messages(chat_id, event.message.id)
 
 client.start()
